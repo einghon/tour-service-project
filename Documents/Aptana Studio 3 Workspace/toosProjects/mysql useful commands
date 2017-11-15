@@ -1,0 +1,7 @@
+how to store current time in mysql with timestamp format;
+mysql> create table timeTest(signUpDate timestamp);
+mysql> insert into timeTest(now());
+
+how to store UTF-8 character in mysql;
+mysql> create table fontTest(texts varchar(12) CHARACTER SET utf8);
+mysql> insert into fontTest(texts)values("ေ\U+103Bပးပ\U+102Bဟ");//auto converted to utf-8 character in terminal, make sure the words from programs also work;
